@@ -1,6 +1,4 @@
-import { Component, Input, Output } from '@angular/core'
-import { EventEmitter } from 'events';
-
+import { Component, EventEmitter, Input, Output } from '@angular/core'
 @Component({
   selector: 'mw-media-item',
   templateUrl: './media.item.component.html',
