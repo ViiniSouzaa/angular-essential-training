@@ -14,16 +14,16 @@ h2 {
   flex: 1;
 }
 :host(.medium-movies) {
-  border-color: aqua;
+  border-color: #53ace4;
 }
 :host(.medium-movies) > h2{
-  border-color: aqua;
+  color: #53ace4;
 }
 :host(.medium-series) {
-  border-color: aqua;
+  border-color: #45bf94;;
 }
 :host(.medium-series) > h2{
-  border-color: aqua;
+  color: #45bf94;;
 }
 .tools {
   margin-top: 8px;
@@ -63,4 +63,5 @@ h2 {
   border-radius: 4px;
   color: #ffffff;
   cursor: pointer;
+  text-decoration: none;
 }
