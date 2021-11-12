@@ -12,7 +12,8 @@ import { MediaItemComponent } from './media.item.component';
     AppComponent,
     MediaItemComponent,
     MediaItemListComponent,
-    FavorireDirective
+    FavorireDirective,
+    Catego
   ],
   bootstrap: [
     AppComponent
