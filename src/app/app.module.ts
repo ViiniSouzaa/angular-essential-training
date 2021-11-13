@@ -4,8 +4,9 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CategoryListPipe } from './category-list.pipe';
 import { FavorireDirective } from './favorite.directive';
-import { MediaItemListComponent } from './media-item-list.component';
-import { MediaItemComponent } from './media.item.component';
+import { MediaItemFormComponent } from './media-item/form/media-item-form.component';
+import { MediaItemListComponent } from './media-item/list/media-item-list.component';
+import { MediaItemComponent } from './media-item/media.item.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -16,7 +17,8 @@ import { MediaItemComponent } from './media.item.component';
     MediaItemComponent,
     MediaItemListComponent,
     FavorireDirective,
-    CategoryListPipe
+    CategoryListPipe,
+    MediaItemFormComponent
   ],
   bootstrap: [
     AppComponent
