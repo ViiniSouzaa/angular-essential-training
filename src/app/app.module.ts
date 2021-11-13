@@ -1,5 +1,5 @@
 import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { CategoryListPipe } from './category-list.pipe';
@@ -10,7 +10,7 @@ import { MediaItemComponent } from './media-item/media.item.component';
 @NgModule({
   imports: [
     BrowserModule,
-    FormsModule
+    ReactiveFormsModule
   ],
   declarations: [
     AppComponent,
