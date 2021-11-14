@@ -6,6 +6,7 @@
 }
 header {
   color: #c6c5c3;
+  width: -webkit-fill-available
 }
 header.medium-movies {
   color: #53ace4;
