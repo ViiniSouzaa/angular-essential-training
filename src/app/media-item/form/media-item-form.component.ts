@@ -12,7 +12,8 @@ import { MediaItemService } from '../service/media-item.service';
 export class MediaItemFormComponent implements OnInit{
   form: FormGroup;
 
-  constructor(private formBuilder: FormBuilder,
+  constructor(
+    private formBuilder: FormBuilder,
     private mediaItemsService: MediaItemService,
     @Inject(lookupListToken) public lookupLists) {}
 
