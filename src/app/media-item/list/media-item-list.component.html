@@ -9,7 +9,9 @@
     <img src="assets/02.png" class="icon" />
   </a>
 </nav>
-<header [ngClass]="{'medium-movies': medium === 'Movies', 'medium-series': medium === 'Series'}">
+<header
+  [ngClass]="{'medium-movies': medium === 'Movies', 'medium-series': medium === 'Series'}">
+  <h2>{{medium}}</h2>
   <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
 </header>
 <section>

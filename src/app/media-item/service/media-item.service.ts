@@ -6,6 +6,8 @@ import { map } from 'rxjs/operators'
   providedIn: 'root'
 })
 export class MediaItemService {
+  constructor(private http: HttpClient){}
+
   mediaItems = [
     {
       id: 1,
@@ -51,15 +53,13 @@ export class MediaItemService {
     }
   ];
 
-  constructor(private http: HttpClient){}
-
   get(medium) {
     const getOptions = {
       params: { medium }
-    };
-    return this.http.get<MediaItemsResponse>('mediaItems', getOptions)
-      .pipe(map(
-        response => {
+    }
+    return this.http.get<MediaItemsResponse>('mediaitems', getOptions)
+      .pipe(
+        map((response: MediaItemsResponse) => {
           return response.mediaItems;
         })
       );
@@ -71,10 +71,14 @@ export class MediaItemService {
 
   delete(mediaItem) {
     const index = this.mediaItems.indexOf(mediaItem);
-    if(index>=0){
+    if (index >= 0) {
       this.mediaItems.splice(index, 1);
     }
   }
+}
+
+interface MediaItemsResponse {
+  mediaItems: MediaItem[];
 }
 
 export interface MediaItem {
@@ -85,8 +89,4 @@ export interface MediaItem {
   year: number;
   watchedOn: number;
   isFavorite: boolean;
-}
-
-interface MediaItemsResponse {
-  mediaItems: MediaItem[];
 }

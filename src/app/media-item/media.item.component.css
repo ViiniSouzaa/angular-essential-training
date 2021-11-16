@@ -20,10 +20,10 @@ h2 {
   color: #53ace4;
 }
 :host(.medium-series) {
-  border-color: #45bf94;;
+  border-color: #45bf94;
 }
 :host(.medium-series) > h2{
-  color: #45bf94;;
+  color: #45bf94;
 }
 .tools {
   margin-top: 8px;
