@@ -9,7 +9,7 @@ nav a {
 }
 header {
   color: #c6c5c3;
-  width: 100%;
+  /*width: 100%;*/
 }
 header.medium-movies {
   color: #53ace4;
