@@ -1,7 +1,7 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { FormControl, FormGroup, Validators, FormBuilder } from '@angular/forms';
-import { lookupListToken } from 'src/app/providers';
+import { Component, OnInit, Inject  } from '@angular/core';
+import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { MediaItemService } from '../service/media-item.service';
+import { lookupListToken } from 'src/app/providers';
 
 
 @Component({
