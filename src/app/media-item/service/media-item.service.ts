@@ -11,7 +11,7 @@ export class MediaItemService {
   get(medium : string ) {
     const getOptions = {
       params: { medium }
-    }
+    };
     return this.http.get<MediaItemsResponse>('mediaitems', getOptions)
       .pipe(
         map((response: MediaItemsResponse) => {
@@ -20,11 +20,11 @@ export class MediaItemService {
       );
   }
 
-  add(mediaItem) {
+  add(mediaItem: MediaItem) {
     return this.http.post('mediaitems', mediaItem);
   }
 
-  delete(mediaItem) {
+  delete(mediaItem: MediaItem) {
     return this.http.delete(`mediaItems/${mediaItem.id}`);
   }
 }
