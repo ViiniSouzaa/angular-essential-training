@@ -21,11 +21,11 @@ export class MediaItemService {
   }
 
   add(mediaItem) {
-    this.http.post('mediaitems', mediaItem);
+    return this.http.post('mediaitems', mediaItem);
   }
 
   delete(mediaItem) {
-    this.http.delete('mediaItems/${mediaItem.id}');
+    return this.http.delete('mediaItems/${mediaItem.id}');
   }
 }
 
