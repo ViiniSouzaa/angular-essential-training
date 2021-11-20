@@ -17,6 +17,7 @@ export class MediaItemListComponent implements OnInit {
   }
 
   onMediaItemDelete(mediaItem) {
+    console.log('teste');
     this.mediaItemService.delete(mediaItem)
       .subscribe(() => {
         this.getMediaItems(this.medium);

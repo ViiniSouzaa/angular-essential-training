@@ -8,7 +8,7 @@ import { map } from 'rxjs/operators'
 export class MediaItemService {
   constructor(private http: HttpClient){}
 
-  get(medium) {
+  get(medium : string ) {
     const getOptions = {
       params: { medium }
     }
@@ -25,7 +25,7 @@ export class MediaItemService {
   }
 
   delete(mediaItem) {
-    return this.http.delete('mediaItems/${mediaItem.id}');
+    return this.http.delete(`mediaItems/${mediaItem.id}`);
   }
 }
 
