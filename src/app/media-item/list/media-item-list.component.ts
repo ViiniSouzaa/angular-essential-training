@@ -24,7 +24,7 @@ export class MediaItemListComponent implements OnInit {
     this.medium = medium;
    this.mediaItemService.get(medium)
       .subscribe(mediaItems => {
-      this.mediaItems = this.mediaItems
+      this.mediaItems = mediaItems
     });
    }
 
