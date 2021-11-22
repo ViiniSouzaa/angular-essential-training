@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
+import { routing } from './app.routing';
 import { CategoryListPipe } from './category-list.pipe';
 import { FavoriteDirective } from './favorite.directive';
 import { MediaItemFormComponent } from './media-item/form/media-item-form.component';
@@ -14,7 +15,8 @@ import { lookupLists, lookupListToken } from './providers';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    routing
   ],
   declarations: [
     AppComponent,
