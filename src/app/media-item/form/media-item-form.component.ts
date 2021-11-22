@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms';
 import { MediaItemService } from '../service/media-item.service';
-import { lookupListToken } from 'src/app/providers';
+import { lookupListToken } from '../../providers';
 import { Router } from '@angular/router';
 
 
